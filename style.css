@@ -282,6 +282,10 @@
             color: var(--cor-destaque);
         }
 
+        .experiencia ul {
+            padding-left: 1.5rem;
+        }
+
         .periodo {
             color: #8892B0;
             font-style: italic;
@@ -391,3 +395,13 @@
                 grid-template-columns: 1fr;
             }
         }
+        .btn-download {
+    background-color: var(--cor-destaque);
+    color: var(--azul-escuro);
+    font-weight: bold;
+}
+
+.btn-download:hover {
+    background-color: var(--cor-clara);
+    color: var(--azul-escuro);
+}
