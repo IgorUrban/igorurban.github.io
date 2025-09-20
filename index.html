@@ -1,13 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<meta charset=utf-8>
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<title>Meu portfólio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Desenvolvedor Backend</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div>
-		<h1>Em breve...</h1>
-	</div>
+    <!-- Navegação -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">{"Igor Urban"}</a>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#experiencias">Experiências</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>Olá, eu sou Igor Urban</h1>
+            <p>Desenvolvedor Backend & Especialista em APIs</p>
+            <p>Crio soluções robustas e escaláveis para aplicações web</p>
+            <a href="#portfolio" class="btn">Ver Projetos</a>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-conteudo">
+                <div>
+                    <p>Sou um desenvolvedor backend com 5 anos de experiência especializado na criação de APIs RESTful, microserviços e sistemas distribuídos. Minha paixão é desenvolver soluções eficientes que resolvam problemas complexos.</p>
+                    <p>Atualmente, trabalho principalmente com Node.js, Python e Java, focando em arquiteturas escaláveis e de alta performance. Tenho experiência em implementar sistemas com baixa latência e alta disponibilidade.</p>
+                    <p>Quando não estou codificando, gosto de contribuir para projetos open source, estudar novas tecnologias e compartilhar conhecimento através de artigos técnicos.</p>
+                </div>
+                <div>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'><rect width='200' height='200' fill='%234A1B6D'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='20' fill='%2364FFDA'>Dev Photo</text></svg>" alt="Foto do Desenvolvedor" style="border-radius: 5px; width: 100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades">
+        <div class="container">
+            <h2>Habilidades Técnicas</h2>
+            <div class="habilidades-lista">
+                <div class="habilidade">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <p>Node.js, Express, Django, Spring Boot, Flask, FastAPI</p>
+                </div>
+                <div class="habilidade">
+                    <h3><i class="fas fa-database"></i> Banco de Dados</h3>
+                    <p>PostgreSQL, MongoDB, Redis, MySQL, Elasticsearch</p>
+                </div>
+                <div class="habilidade">
+                    <h3><i class="fas fa-cloud"></i> DevOps & Cloud</h3>
+                    <p>AWS, Docker, Kubernetes, Jenkins, Terraform, CI/CD</p>
+                </div>
+                <div class="habilidade">
+                    <h3><i class="fas fa-code"></i> Linguagens</h3>
+                    <p>JavaScript/TypeScript, Python, Java, Go, SQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Projetos Destacados</h2>
+            <div class="projetos">
+                <div class="projeto">
+                    <h3>Sistema de Autenticação Distribuída</h3>
+                    <p>Microserviço de autenticação com JWT, OAuth2 e autenticação de dois fatores. Implementado com rate limiting e monitoramento.</p>
+                    <div class="tecnologias">
+                        <span>Node.js</span>
+                        <span>Redis</span>
+                        <span>JWT</span>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <h3>API de E-commerce</h3>
+                    <p>API RESTful para plataforma de e-commerce com gestão de produtos, usuários, pedidos e pagamentos.</p>
+                    <div class="tecnologias">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <h3>Sistema de Mensageria em Tempo Real</h3>
+                    <p>Sistema de chat em tempo real com WebSockets, salas privadas e histórico de mensagens.</p>
+                    <div class="tecnologias">
+                        <span>Socket.io</span>
+                        <span>Redis</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiências -->
+    <section id="experiencias">
+        <div class="container">
+            <h2>Experiências Profissionais</h2>
+            <div class="experiencias">
+                <div class="experiencia">
+                    <h3>Desenvolvedor Backend Sênior</h3>
+                    <p class="periodo">TechSolutions Inc. | Jan 2021 - Presente</p>
+                    <p>Lidero o desenvolvimento de APIs para plataforma de pagamentos, garantindo alta disponibilidade e segurança. Implementei sistema de cache que melhorou performance em 40%.</p>
+                </div>
+                <div class="experiencia">
+                    <h3>Desenvolvedor Backend</h3>
+                    <p class="periodo">InovaTech | Mar 2019 - Dez 2020</p>
+                    <p>Desenvolvimento de microserviços para aplicação de streaming de vídeo. Integração com serviços AWS e implementação de CI/CD.</p>
+                </div>
+                <div class="experiencia">
+                    <h3>Desenvolvedor Java</h3>
+                    <p class="periodo">StartUpDev | Jun 2018 - Fev 2019</p>
+                    <p>Principais atribuições:</p>
+                    <ul>
+                        <li>Integração entre sistemas com implementação de WebHooks e API's</li>
+                        <li>Implementação de dashboard de relatórios</li>
+                        <li>Manutenção em integrações via banco</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contato-conteudo">
+                <div>
+                    <p>Estou sempre disponível a novas oportunidades e projetos interessantes. Entre em contato comigo através das redes sociais ou por email.</p>
+                    <p><i class="fas fa-envelope"></i> email: igurbanca@gmail.com</p>
+                </div>
+                <div class="redes-sociais">
+                    <a href="https://github.com/IgorUrban" target="_blank" class="rede-social">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>Veja meus projetos e contribuições</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/igor-urban/" target="_blank" class="rede-social">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>Conecte-se comigo profissionalmente</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Igor Urban. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
